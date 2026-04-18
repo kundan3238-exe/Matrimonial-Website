@@ -2,36 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Matrimonial</title>
+  <title>MatchMate</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-amber-50">
 
-<!-- Navbar -->
-<nav class="bg-white p-4 flex justify-between shadow">
-  <h1 class="text-xl font-bold text-pink-600">Matrimony</h1>
-  <div>
-    <a href="pages/login.html" class="mr-4">Login</a>
-    <a href="pages/register.html" class="bg-pink-500 text-white px-4 py-2 rounded">Register</a>
-  </div>
-</nav>
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
-<!-- Hero -->
-<div class="text-center mt-20">
-  <h2 class="text-4xl font-bold">Find Your Perfect Match ❤️</h2>
-</div>
+      <h1 class="text-2xl font-bold text-pink-600">MatchMate</h1>
 
-<!-- Profiles -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+      <nav>
+        <ul class="flex space-x-8 text-sm uppercase tracking-wider">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Profiles</a></li>
+          <li><a href="#" class="nav-link">Dashboard</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#" class="btn-outline">Login</a></li>
+          <li><a href="#" class="btn-primary">Register</a></li>
+        </ul>
+      </nav>
 
-  <div class="bg-white p-4 shadow rounded">
-    <img src="https://via.placeholder.com/200">
-    <h3 class="font-bold mt-2">Amit, 28</h3>
-    <p>Engineer</p>
-  </div>
+    </div>
+  </header>
 
-</div>
+  <div class="mt-24"></div>
+
+  <!-- HERO -->
+  <section class="text-center py-20 bg-pink-50">
+    <h1 class="text-5xl font-bold text-gray-800">
+      Find Your Perfect Match 💖
+    </h1>
+    <p class="mt-4 text-gray-600 text-lg">
+      Trusted by thousands to find meaningful relationships.
+    </p>
+    <a href="#" class="mt-6 inline-block btn-primary">
+      Get Started
+    </a>
+  </section>
+
+  <!-- SEARCH -->
+  <section class="text-center py-16 bg-white">
+    <h2 class="text-3xl font-bold text-gray-700">Search Your Match</h2>
+
+    <div class="mt-6 flex justify-center gap-4 flex-wrap">
+      <input type="text" placeholder="Age" class="input-field">
+      <input type="text" placeholder="City" class="input-field">
+
+      <select class="input-field">
+        <option>Religion</option>
+        <option>Hindu</option>
+        <option>Muslim</option>
+      </select>
+
+      <button class="btn-primary">Search</button>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SECTION -->
+  <section class="text-center py-16 bg-amber-100">
+    <h2 class="text-3xl font-bold text-gray-700">How It Works</h2>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-8 px-10">
+      <div>
+        <h3 class="text-xl font-semibold">1. Register</h3>
+        <p class="text-gray-500">Create your profile</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold">2. Search</h3>
+        <p class="text-gray-500">Find matches</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold">3. Connect</h3>
+        <p class="text-gray-500">Start chatting</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILES -->
+  <section class="text-center py-16 bg-white">
+    <h2 class="text-3xl font-bold text-gray-700">Featured Profiles</h2>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-8 px-10">
+      <div class="card">
+        <h3 class="font-semibold">Rahul, 28</h3>
+        <p class="text-gray-500">Software Engineer</p>
+      </div>
+
+      <div class="card">
+        <h3 class="font-semibold">Priya, 25</h3>
+        <p class="text-gray-500">Designer</p>
+      </div>
+
+      <div class="card">
+        <h3 class="font-semibold">Amit, 30</h3>
+        <p class="text-gray-500">Business Owner</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="text-center py-16 bg-pink-600 text-white">
+    <h2 class="text-3xl font-bold">Start Your Journey Today</h2>
+    <p class="mt-2">Join now and find your perfect match</p>
+
+    <a href="#" class="mt-6 inline-block bg-white text-pink-600 px-6 py-2 rounded">
+      Register Now
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2026 MatchMate Team. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

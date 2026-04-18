@@ -1,0 +1,84 @@
+/* NAV LINKS */
+.nav-link {
+    position: relative;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ec4899;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #ec4899;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #ec4899;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #ec4899;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #db2777;
+}
+
+.btn-outline {
+    border: 1px solid #ec4899;
+    color: #ec4899;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #ec4899;
+    color: white;
+}
+
+/* INPUT */
+.input-field {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #ec4899;
+}
+
+/* CARD */
+.card {
+    border: 1px solid #eee;
+    padding: 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
